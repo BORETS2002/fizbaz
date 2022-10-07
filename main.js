@@ -49,3 +49,36 @@ var aaa = inptq * elsel ;
 outtwoo.textContent = `${aaa}`;
 inptwoo.value= ""
 } )
+
+
+var ranForm = document.querySelector(".randform ");
+var randInput = document.querySelector(".randinput");
+ 
+ var ranTekshir = document.querySelector(".randtekshir");
+ 
+ var ran = Math.floor(Math.random() * 100)
+ 
+ console.log( ran);
+ranForm.addEventListener("submit", function (evt) {
+    evt.preventDefault()
+    randInput = Number ( randInput.value)
+
+debugger
+   
+if (randInput == ran ) {
+  ranTekshir.textContent = "WIN!!!"
+}
+ else if (randInput > ran ){
+  ranTekshir.textContent = " randomdan katta son"
+ }
+
+ else if (randInput < ran ){
+  ranTekshir.textContent = " randomdan kichik son"
+ }
+ randInput = ""
+ 
+ 
+// randInput.disabled = true;
+
+
+} )

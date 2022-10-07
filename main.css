@@ -1,5 +1,10 @@
  
-
+.randform{
+  margin-top: 50px;
+width: 305px;
+margin-right: auto;
+margin-left: auto;
+}
 .formtwoo{
   margin-top: 50px;
 width: 305px;
@@ -12,3 +17,4 @@ margin-left: auto;
   border: 1px solid #ced4da;
    
 }
+ 
